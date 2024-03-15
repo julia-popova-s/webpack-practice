@@ -1,4 +1,5 @@
 export type BuildMode = 'production' | 'development';
+export type BuildPlatform = 'mobile' | 'desktop';
 
 export interface BuildPaths {
   entry: string;
@@ -12,4 +13,5 @@ export interface BuildOptions {
   paths: BuildPaths;
   analyzer?: boolean;
   mode: BuildMode;
+  platform: BuildPlatform;
 }
